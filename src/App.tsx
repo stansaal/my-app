@@ -6,7 +6,7 @@ import PostPage from "./pages/post";
 import AuthorPage from "./pages/author";
 
 function App() {
-	const [page] = useState(0);
+	const [page] = useState(1);
 
 	return (
 		<div className="App">
