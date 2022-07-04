@@ -1,4 +1,4 @@
-import { IArticle } from "../../../types";
+import { IArticle } from "../../types";
 
 const authorPosts: IArticle[] = [
 	{
