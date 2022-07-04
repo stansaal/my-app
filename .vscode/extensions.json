@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "clinyong.vscode-css-modules",
+    "hex-ci.stylelint-plus",
+    "vivaxy.vscode-conventional-commits",
+  ]
+}
