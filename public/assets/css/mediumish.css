@@ -64,12 +64,9 @@ section {
 	margin-bottom:15px;
 }
 .listfeaturedtag .thumbnail {
-	background-size:cover;
-	height:100%;
-	display:block;
-	background-position:38% 22% !important;
-	background-origin:border-box!important;
-	border-top-left-radius:2px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 .listfeaturedtag .card-block {
 	padding-left:0;

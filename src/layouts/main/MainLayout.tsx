@@ -1,12 +1,8 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 
 import { Header, Footer } from "../components";
 
-interface IMainLayoutProps {
-	children?: React.ReactNode;
-}
-
-const MainLayout: React.FC<IMainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<div>
 			<Header />
