@@ -1,12 +1,12 @@
 import React from "react";
 import { ArticleCard } from "../../../components/elements/Card";
-import { IArticle } from "../../../types";
+import { IArticleCard } from "../../../types";
 
-export interface IArticlesListProps {
-	list: IArticle[];
+export interface IArticleCardsListProps {
+	list: IArticleCard[];
 }
 
-const ArticlesList: React.FC<IArticlesListProps> = ({ list }) => {
+const ArticlesList: React.FC<IArticleCardsListProps> = ({ list }) => {
 	return (
 		<div className="graybg authorpage">
 			<div className="container">

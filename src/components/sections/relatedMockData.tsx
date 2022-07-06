@@ -1,6 +1,6 @@
-import { IArticle } from "../../types";
+import { IArticleCard } from "../../types";
 
-const relatedArticles: IArticle[] = [
+const relatedArticles: IArticleCard[] = [
 	{
 		id: 1,
 		title: "Autumn doesn't have to be nostalgic, you know?",

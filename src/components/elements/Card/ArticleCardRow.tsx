@@ -1,9 +1,9 @@
 import React from "react";
-import { IArticleCardProps } from "./ArticleCard";
+import { IArticleCardCardProps } from "./ArticleCard";
 import { Card } from "./Card";
 import { CardBlock } from "./CardBlock";
 
-const ArticleCardRow: React.FC<IArticleCardProps> = (props) => {
+const ArticleCardRow: React.FC<IArticleCardCardProps> = (props) => {
 	const { thumbUrl, title, link } = props;
 	return (
 		<Card>

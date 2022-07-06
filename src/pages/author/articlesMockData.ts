@@ -1,6 +1,6 @@
-import { IArticle } from "../../types";
+import { IArticleCard } from "../../types";
 
-const authorPosts: IArticle[] = [
+const authorPosts: IArticleCard[] = [
 	{
 		id: 1,
 		title: "Autumn doesn't have to be nostalgic, you know?",

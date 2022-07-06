@@ -2,11 +2,11 @@ import React from "react";
 import { Card } from "./Card";
 import { CardBlock, ICardBlockProps } from "./CardBlock";
 
-export interface IArticleCardProps extends ICardBlockProps {
+export interface IArticleCardCardProps extends ICardBlockProps {
 	thumbUrl?: string;
 }
 
-const ArticleCard: React.FC<IArticleCardProps> = (props) => {
+const ArticleCard: React.FC<IArticleCardCardProps> = (props) => {
 	const { link, title, thumbUrl } = props;
 
 	return (
