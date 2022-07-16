@@ -11,6 +11,7 @@ import Heading from "./sections/Heading";
 
 //mock data
 import { post } from "./postMockData";
+import { demopic10 } from "../../assets/img";
 
 const PostPage = () => {
 	return (
@@ -30,7 +31,7 @@ const PostPage = () => {
 							postDate={post.postDate}
 							postReadTime={post.postReadTime}
 						/>
-						<img className="featured-image img-fluid" src="assets/img/demopic/10.jpg" alt=""></img>
+						<img className="featured-image img-fluid" src={demopic10} alt=""></img>
 						<Content>
 							<div dangerouslySetInnerHTML={{ __html: post.content }}></div>
 						</Content>

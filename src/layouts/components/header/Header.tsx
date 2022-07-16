@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { logo } from "../../../assets/img";
 import { Search } from "../../../components/elements/Search";
 import { Navigation } from "./Navigation";
 
@@ -27,7 +28,7 @@ const Header = () => {
 			</button>
 			<div className="container">
 				<a className="navbar-brand" href="/">
-					<img src="assets/img/logo.png" alt="logo" />
+					<img src={logo} alt="logo" />
 				</a>
 				<div className="collapse navbar-collapse" id="navbarsExampleDefault">
 					<Navigation links={navigation} />
