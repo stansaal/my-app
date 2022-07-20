@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IArticleCardCardProps } from "./ArticleCard";
 import { Card } from "./Card";
 import { CardBlock } from "./CardBlock";
@@ -10,9 +11,9 @@ const ArticleCardRow: React.FC<IArticleCardCardProps> = (props) => {
 			<div className="row">
 				{!!thumbUrl && (
 					<div className="col-md-5 wrapthumbnail">
-						<a href={link ?? "#"}>
+						<Link to={link ?? "#"}>
 							<img className="thumbnail" src={thumbUrl} alt={title ?? ""} />
-						</a>
+						</Link>
 					</div>
 				)}
 				<div className="col-md-7">

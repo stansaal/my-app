@@ -1,13 +1,12 @@
 export interface IArticleCard {
 	id: number;
-	link?: string;
 	title?: string;
 	text?: string;
 	postReadTime?: string;
 	postDate?: string;
 	authorName?: string;
 	authorAvatarUrl?: string;
-	authorLink?: string;
+	authorId: number;
 	thumbUrl?: string;
 }
 
@@ -21,7 +20,7 @@ export interface IArticle {
 	postDate?: string;
 	authorName?: string;
 	authorAvatarUrl?: string;
-	authorLink?: string;
+	authorId: number;
 }
 
 export interface ITag {

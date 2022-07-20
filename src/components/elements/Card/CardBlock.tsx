@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export interface ICardBlockProps {
 	link?: string;
@@ -25,14 +26,14 @@ const CardBlock: React.FC<ICardBlockProps> = ({
 		<div className="card-block">
 			{!!title && (
 				<h2 className="card-title">
-					<a href={link ?? "#"}>{title}</a>
+					<Link to={link ?? "#"}>{title}</Link>
 				</h2>
 			)}
 			{!!text && <h4 className="card-text">{text}</h4>}
 			<div className="metafooter">
 				<div className="wrapfooter">
 					<span className="meta-footer-thumb">
-						<a href={authorLink ?? "#"}>
+						<Link to={authorLink ?? "#"}>
 							<img
 								className="author-thumb"
 								src={
@@ -41,11 +42,11 @@ const CardBlock: React.FC<ICardBlockProps> = ({
 								}
 								alt={authorName ?? ""}
 							/>
-						</a>
+						</Link>
 					</span>
 					<span className="author-meta">
 						<span className="post-name">
-							<a href={authorLink ?? "#"}>{authorName ?? "Admin"}</a>
+							<Link to={authorLink ?? "#"}>{authorName ?? "Admin"}</Link>
 						</span>
 						<br />
 						{!!postDate && <span className="post-date">{postDate}</span>}

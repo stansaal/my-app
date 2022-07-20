@@ -1,4 +1,6 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
 import { RelatedSection } from "../../components/sections/Related";
 
 //layout
@@ -14,6 +16,7 @@ import { post } from "./postMockData";
 import { demopic10 } from "../../assets/img";
 
 const PostPage = () => {
+	const { id } = useParams();
 	return (
 		<MainLayout>
 			<div className="container">
@@ -22,10 +25,11 @@ const PostPage = () => {
 						<Share />
 					</div>
 					<div className="col-md-8 col-md-offset-2 col-xs-12">
+						ID: {id} {/* TODO: Убрать эту строку, когда сделаем запросы */}
 						<Heading
 							title={post.title}
 							aboutAuthor={post.aboutAuthor}
-							authorLink={post.authorLink}
+							authorId={post.authorId}
 							authorName={post.authorName}
 							authorAvatarUrl={post.authorAvatarUrl}
 							postDate={post.postDate}
