@@ -14,14 +14,14 @@ const FeaturedSection = () => {
 				{featuredArticles.map((article) => (
 					<ArticleCardRow
 						key={article.id}
-						link={article.link}
+						link={`/post/${article.id}`}
 						thumbUrl={article.thumbUrl}
 						title={article.title}
 						text={article.text}
 						postDate={article.postDate}
 						postReadTime={article.postReadTime}
 						authorName={article.authorName}
-						authorLink={article.authorLink}
+						authorLink={`/author/${article.authorId}`}
 						authorAvatarUrl={article.authorAvatarUrl}
 					/>
 				))}

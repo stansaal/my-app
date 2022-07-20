@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //pages
 import MainPage from "./pages/main";
@@ -6,13 +7,15 @@ import PostPage from "./pages/post";
 import AuthorPage from "./pages/author";
 
 function App() {
-	const [page] = useState(0);
-
 	return (
 		<div className="App">
-			{page === 0 && <MainPage />}
-			{page === 1 && <PostPage />}
-			{page === 2 && <AuthorPage />}
+			<BrowserRouter>
+				<Routes>
+					<Route path={"/"} element={<MainPage />} />
+					<Route path={"post/:id"} element={<PostPage />} />
+					<Route path={"author/:id"} element={<AuthorPage />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }

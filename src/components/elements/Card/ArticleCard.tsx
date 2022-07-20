@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card } from "./Card";
 import { CardBlock, ICardBlockProps } from "./CardBlock";
 
@@ -12,9 +13,9 @@ const ArticleCard: React.FC<IArticleCardCardProps> = (props) => {
 	return (
 		<Card>
 			{!!thumbUrl && (
-				<a href={link ?? "#"}>
+				<Link to={link ?? "#"}>
 					<img className="img-fluid" src={thumbUrl} alt={title ?? ""} />
-				</a>
+				</Link>
 			)}
 			<CardBlock {...props} />
 		</Card>

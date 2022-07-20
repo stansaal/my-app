@@ -12,6 +12,7 @@ const post: IArticle = {
 		{ link: "#", title: "Personal Growth" },
 	],
 	authorName: "Sal",
+	authorId: 1,
 	aboutAuthor:
 		'Founder of WowThemes.net and creator of "Mediumish" theme that you are currently previewing. Developing professional premium themes, templates, plugins, scripts since 2012.',
 	postDate: "22 July 2017",
