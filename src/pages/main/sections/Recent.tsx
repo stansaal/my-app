@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ArticleCard, CardColumns } from "../../../components/elements/Card";
 
 import { SectionTitle } from "../../../components/sections/common";
+import { useAppDispatch } from "../../../store";
+import { getArticlesThunk } from "../../../store/getArticlesThunk";
 
 //mock data
 import { recentArticles } from "./articlesMockData";
 
 const RecentSection = () => {
+	const dispatch = useAppDispatch();
+
+	useEffect(() => {
+		dispatch(getArticlesThunk());
+	}, []);
+
 	return (
 		<section className="recent-posts">
 			<SectionTitle>All Stories</SectionTitle>
